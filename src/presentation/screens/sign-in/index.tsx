@@ -3,6 +3,7 @@ import { VStack, Image, Center, Text, Heading } from 'native-base';
 import BackgroundImg from '@assets/background.png';
 import LogoImg from '@assets/logo-goal.png';
 import { InputComponent } from '@components/input';
+import { ButtonComponent } from '@components/button';
 
 export const SignInScreen: React.FC = ({}) => {
   return (
@@ -51,6 +52,13 @@ export const SignInScreen: React.FC = ({}) => {
         <InputComponent
           placeholder='Digite sua senha'
           secureTextEntry
+        />
+
+        <ButtonComponent title='Acessar' />
+
+        <ButtonComponent
+          title='Criar conta'
+          variant={'outline'}
         />
       </Center>
     </VStack>
