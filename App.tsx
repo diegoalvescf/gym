@@ -1,12 +1,14 @@
-import { LoadingComponent } from '@components/loading';
 import {
   Roboto_400Regular,
   Roboto_700Bold,
   useFonts,
 } from '@expo-google-fonts/roboto';
-import { Center, NativeBaseProvider } from 'native-base';
-import { StatusBar, Text } from 'react-native';
+import { NativeBaseProvider } from 'native-base';
+import { StatusBar } from 'react-native';
 import { theme } from './src/common/theme';
+
+import { LoadingComponent } from '@components/loading';
+import { SignInScreen } from '@screens/sign-in';
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
@@ -17,13 +19,7 @@ export default function App() {
         backgroundColor={'transparent'}
         translucent
       />
-      {fontsLoaded ? (
-        <Center flex={1}>
-          <Text>Open up App.tsx to start working on your app!</Text>
-        </Center>
-      ) : (
-        <LoadingComponent />
-      )}
+      {fontsLoaded ? <SignInScreen /> : <LoadingComponent />}
     </NativeBaseProvider>
   );
 }

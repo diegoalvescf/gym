@@ -27,42 +27,20 @@ export const theme = extendTheme({
     body: 'Roboto_400Regular',
   },
   fontSizes: {
-    xxl: {
-      absolute: PixelRatio.getFontScale() * 36,
-      responsive: RFValue(PixelRatio.getFontScale() * 36),
-    },
-    xl: {
-      absolute: PixelRatio.getFontScale() * 22,
-      responsive: RFValue(PixelRatio.getFontScale() * 22),
-    },
-    lg: {
-      absolute: PixelRatio.getFontScale() * 20,
-      responsive: RFValue(PixelRatio.getFontScale() * 20),
-    },
-    xxm: {
-      absolute: PixelRatio.getFontScale() * 18,
-      responsive: RFValue(PixelRatio.getFontScale() * 18),
-    },
-    xm: {
-      absolute: PixelRatio.getFontScale() * 16,
-      responsive: RFValue(PixelRatio.getFontScale() * 16),
-    },
-    md: {
-      absolute: PixelRatio.getFontScale() * 14,
-      responsive: RFValue(PixelRatio.getFontScale() * 14),
-    },
-    sm: {
-      absolute: PixelRatio.getFontScale() * 12,
-      responsive: RFValue(PixelRatio.getFontScale() * 12),
-    },
-    xs: {
-      absolute: PixelRatio.getFontScale() * 10,
-      responsive: RFValue(PixelRatio.getFontScale() * 10),
-    },
-    xxs: {
-      absolute: PixelRatio.getFontScale() * 8,
-      responsive: RFValue(PixelRatio.getFontScale() * 8),
-    },
+    '2xs': RFValue(PixelRatio.getFontScale() * 10),
+    xs: RFValue(PixelRatio.getFontScale() * 12),
+    sm: RFValue(PixelRatio.getFontScale() * 14),
+    md: RFValue(PixelRatio.getFontScale() * 16),
+    lg: RFValue(PixelRatio.getFontScale() * 18),
+    xl: RFValue(PixelRatio.getFontScale() * 20),
+    '2xl': RFValue(PixelRatio.getFontScale() * 24),
+    '3xl': RFValue(PixelRatio.getFontScale() * 30),
+    '4xl': RFValue(PixelRatio.getFontScale() * 36),
+    '5xl': RFValue(PixelRatio.getFontScale() * 48),
+    '6xl': RFValue(PixelRatio.getFontScale() * 60),
+    '7xl': RFValue(PixelRatio.getFontScale() * 72),
+    '8xl': RFValue(PixelRatio.getFontScale() * 96),
+    '9xl': RFValue(PixelRatio.getFontScale() * 128),
   },
   sizes: {
     14: 56,
